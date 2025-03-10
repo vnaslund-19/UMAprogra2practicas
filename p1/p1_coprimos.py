@@ -26,7 +26,7 @@ def son_coprimos(num1: int, num2: int) -> bool:
 
 def print_coprimos(l: int, u: int) -> None:
     for i in range(l, u+1):
-        for j in range(i+1, u+1):
+        for j in range(i, u+1):
             if son_coprimos(i, j):
                 print(f"Coprimos: {i} {j}")
 

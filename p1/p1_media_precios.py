@@ -1,9 +1,8 @@
-
 def calc_media(n: int) -> None:
     sum: float = 0
     for i in range(1, n+1):
         sum += float(input(f"Precio modelo {i}: "))
-    print(f"El valor medio de los {n} modelos de coche asciende a: {sum/n} €")
+    print(f"El valor medio de los {n} modelos de coche asciende a: {sum/n:.2f} €")
 
 
 def main() -> None:
